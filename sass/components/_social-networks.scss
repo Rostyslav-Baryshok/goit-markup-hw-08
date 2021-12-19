@@ -1,5 +1,6 @@
 .social-networks {
   display: flex;
+  justify-content: center;
 
   .social-networks__item:not(:last-child) {
     margin-right: 10px;
@@ -27,4 +28,7 @@
 }
 .social-networks__img--secondary {
   fill: $social-networks-color;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }

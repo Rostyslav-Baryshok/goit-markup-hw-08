@@ -1,12 +1,11 @@
 .subscribe__input {
-  display: inline;
-  outline: none;
   color: currentColor;
   background-color: transparent;
   padding: 14px 16px;
   color: $descript-title-color;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  width: 358px;
+  width: 100%;
+  margin-bottom: 20px;
   margin-right: 12px;
   border-radius: 4px;
   font-size: 16px;
@@ -14,9 +13,18 @@
   line-height: 1.25;
   letter-spacing: 0.03em;
   transition: border-color 250ms $timing-function;
+  width: 450px;
 
   &:hover,
   &:focus {
     border: 1px solid $accent-color;
+  }
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    margin-right: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0 12px 0 0;
+    width: 358px;
   }
 }
