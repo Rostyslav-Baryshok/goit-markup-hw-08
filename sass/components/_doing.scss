@@ -1,0 +1,32 @@
+.section-doing {
+  padding-top: 0px;
+}
+.doing {
+  display: flex;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.doing__item {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.doing__thumb {
+  position: relative;
+}
+.doing__text-overlay {
+  bottom: 0;
+  left: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+.doing__text {
+  @extend %base-font-size;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  text-transform: uppercase;
+  color: $descript-title-color;
+}

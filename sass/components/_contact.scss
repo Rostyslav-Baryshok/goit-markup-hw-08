@@ -1,0 +1,24 @@
+.contact-list {
+  @extend %position;
+  margin-left: auto;
+}
+.contact-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+.contact-list__link {
+  @extend %base-font-size;
+  @extend %position;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: $main-text-color;
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.contact-list__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}

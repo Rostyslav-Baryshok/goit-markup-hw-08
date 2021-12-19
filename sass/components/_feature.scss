@@ -1,0 +1,32 @@
+.feature {
+  display: flex;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.feature__item {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100% - 120px) / 4);
+}
+.feature__svg-content {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+  background-color: $our-tea-background;
+}
+.feature__title {
+  @extend %base-font-size;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: $secondary-text-color;
+}
+.feature__description {
+  @include text(400, $main-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}

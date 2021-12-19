@@ -1,0 +1,24 @@
+.footer {
+  background: $hero-footer-background;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer__content {
+  display: flex;
+}
+.footer__address-content {
+  margin-right: 70px;
+}
+.footer__title {
+  @extend %base-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  color: $descript-title-color;
+  letter-spacing: 0.03em;
+}
+.footer__form {
+  margin-left: auto;
+}
