@@ -1,5 +1,10 @@
 .section-doing {
-  padding-top: 0px;
+  // padding-top: 0px;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-bottom: 94px;
+  }
 }
 .doing {
   display: flex;
