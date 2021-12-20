@@ -1,8 +1,22 @@
 .filters {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: -8px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
-.filters__item:not(:last-child) {
-  margin-right: 8px;
+.filters__item {
+  margin: 8px;
+  &:not(:last-child) {
+    margin-right: 0;
+  }
 }

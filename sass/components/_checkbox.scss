@@ -6,10 +6,16 @@
 }
 .checkbox-fild__label {
   @extend %position;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
   color: $main-text-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
 .checkbox-fild__input {
   position: absolute;
@@ -35,4 +41,13 @@
 .checkbox-fild__conditions {
   color: $accent-color;
   text-decoration: underline;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }

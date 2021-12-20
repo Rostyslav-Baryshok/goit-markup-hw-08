@@ -1,3 +1,11 @@
+.contact-wrap {
+  margin-top: auto;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    margin-left: auto;
+  }
+}
+
 .contact-list {
   @extend %position;
   margin-left: auto;
