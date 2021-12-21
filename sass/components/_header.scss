@@ -1,11 +1,29 @@
 .header {
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
-  background-color: $descript-title-color;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
-.header__container {
-  @extend %position;
+
+.header-container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+}
+.header__logo {
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }

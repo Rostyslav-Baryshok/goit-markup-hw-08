@@ -36,6 +36,11 @@ address {
 .list {
   list-style: none;
 }
+.link {
+  &.current {
+    color: $accent-color;
+  }
+}
 .container {
   padding-left: 15px;
   padding-right: 15px;
