@@ -764,20 +764,12 @@ address {
   flex-wrap: wrap;
   justify-content: flex-start;
   margin: -8px;
-  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
   .filters {
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .filters {
-    margin-bottom: 50px;
   }
 }
 
@@ -787,6 +779,28 @@ address {
 
 .filters__item:not(:last-child) {
   margin-right: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .filters__item {
+    margin: 0 8px;
+  }
+}
+
+.portfolio-wrap {
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-wrap {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-wrap {
+    margin-top: 50px;
+  }
 }
 
 @media screen and (min-width: 768px) {
