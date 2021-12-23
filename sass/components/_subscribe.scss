@@ -1,6 +1,5 @@
 .subscribe__input {
   outline: none;
-  color: currentColor;
   background-color: transparent;
   padding: 14px 16px;
   color: $descript-title-color;
@@ -13,15 +12,14 @@
   line-height: 1.25;
   letter-spacing: 0.03em;
   transition: border-color 250ms $timing-function;
-  width: 450px;
 
   &:hover,
   &:focus {
     border: 1px solid $accent-color;
   }
-  @media screen and (min-width: 768px) {
-    width: 100%;
-  }
+  // @media screen and (min-width: 768px) {
+  //   width: 100%;
+  // }
   @media screen and (min-width: 1200px) {
     margin-right: 12px;
     margin-bottom: 0;

@@ -20,6 +20,9 @@
   letter-spacing: 0.02em;
   color: $main-text-color;
 
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
   &:hover,
   &:focus {
     color: $accent-color;
@@ -30,11 +33,6 @@
     @media screen and (min-width: 1200px) {
       margin-bottom: 0;
     }
-  }
-}
-.contact__email {
-  @media screen and (min-width: 1200px) {
-    margin-right: 30px;
   }
 }
 

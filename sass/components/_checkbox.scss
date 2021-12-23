@@ -11,6 +11,9 @@
   letter-spacing: 0.01em;
   color: $main-text-color;
 
+  @media screen and (max-width: 339px) {
+    margin-top: 10px;
+  }
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71;
@@ -23,7 +26,7 @@
   -webkit-appearance: none;
 }
 .checkbox-fild__icon {
-  width: 16px;
+  min-width: 16px;
   height: 15px;
   margin-right: 8px;
   background-image: url(../images/icon-check-br.svg);
