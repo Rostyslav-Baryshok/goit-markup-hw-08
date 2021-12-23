@@ -3,26 +3,23 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    margin-left: 84px;
+    margin-left: auto;
     flex-direction: column;
   }
   @media screen and (min-width: 1200px) {
     flex-direction: row;
-    margin-left: 305px;
+    // margin-left: 305px;
   }
 }
 .contact__link {
   display: flex;
   align-items: center;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: $main-text-color;
 
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
   &:hover,
   &:focus {
     color: $accent-color;
@@ -30,8 +27,13 @@
   &:first-child {
     margin-bottom: 10px;
 
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
     @media screen and (min-width: 1200px) {
       margin-bottom: 0;
+      font-size: 14px;
     }
   }
 }

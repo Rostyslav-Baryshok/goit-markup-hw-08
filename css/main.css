@@ -324,7 +324,7 @@ address {
 @media screen and (min-width: 768px) {
   .contact {
     display: flex;
-    margin-left: 84px;
+    margin-left: auto;
     flex-direction: column;
   }
 }
@@ -332,7 +332,6 @@ address {
 @media screen and (min-width: 1200px) {
   .contact {
     flex-direction: row;
-    margin-left: 305px;
   }
 }
 
@@ -340,14 +339,10 @@ address {
   display: flex;
   align-items: center;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: #757575;
-}
-
-.contact__link:not(:last-child) {
-  margin-right: 30px;
 }
 
 .contact__link:hover, .contact__link:focus {
@@ -358,9 +353,14 @@ address {
   margin-bottom: 10px;
 }
 
+.contact__link:first-child:not(:last-child) {
+  margin-right: 30px;
+}
+
 @media screen and (min-width: 1200px) {
   .contact__link:first-child {
     margin-bottom: 0;
+    font-size: 14px;
   }
 }
 
