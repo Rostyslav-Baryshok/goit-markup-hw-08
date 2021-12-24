@@ -102,56 +102,38 @@ address {
   overflow: hidden;
 }
 
-@media screen and (min-width: 768px) {
-  .mobile-nav {
-    display: none;
-  }
-}
-
-.mobile-nav__button-open {
-  cursor: pointer;
-  background-color: transparent;
-  border: 0;
-  padding: 0;
-}
-
-.mobile-nav__button-open:hover, .mobile-nav__button-open:focus {
-  fill: #2196f3;
-}
-
-.mobile-nav__icon,
-.mobile-menu__icon {
-  width: 40px;
-  height: 40px;
-}
-
-.mobile-menu {
+.mobile-nav {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   background-color: #ffffff;
   width: 100vw;
   height: 100vh;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  z-index: 1000;
+  padding: 48px 0 48px 40px;
+  z-index: 9;
+  transform: translateX(100%);
+  transition: transform 900ms;
 }
 
-.mobile-menu .container {
-  position: relative;
+.mobile-nav.is-open {
+  transform: translateX(0);
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-nav.is-open {
+    display: block;
+  }
+}
+
+.mobile-nav__container {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.mobile-menu.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-}
-
-.mobile-menu__link {
+.mobile-nav__link {
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
@@ -160,7 +142,11 @@ address {
   color: #212121;
 }
 
-.mobile-menu__link:hover, .mobile-menu__link:focus {
+.mobile-nav__link:hover, .mobile-nav__link:focus {
+  color: #2196f3;
+}
+
+.mobile-nav__link.current {
   color: #2196f3;
 }
 
@@ -182,7 +168,7 @@ address {
   margin-bottom: 64px;
 }
 
-.mobile-menu__item:not(:last-child) {
+.mobile-nav__item:not(:last-child) {
   margin-bottom: 32px;
 }
 
@@ -760,6 +746,38 @@ address {
 
 .close-button:hover, .close-button:focus {
   fill: #2196f3;
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  z-index: 10;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-button:focus {
+  fill: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button .menu-button__icon-cross {
+  opacity: 0;
+}
+
+.menu-button.is-open .menu-button__icon-cross {
+  opacity: 1;
+}
+
+.menu-button.is-open .menu-button__icon-menu {
+  opacity: 0;
 }
 
 .filters {
