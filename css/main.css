@@ -14,6 +14,12 @@
   align-items: center;
 }
 
+.our-clients, .portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--main-text-color);
@@ -103,7 +109,6 @@ address {
 }
 
 .mobile-nav {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -113,16 +118,16 @@ address {
   padding: 48px 0 48px 40px;
   z-index: 9;
   transform: translateX(100%);
-  transition: transform 900ms;
+  transition: transform 300ms ease-in-out;
 }
 
 .mobile-nav.is-open {
   transform: translateX(0);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .mobile-nav.is-open {
-    display: block;
+    display: none;
   }
 }
 
@@ -533,10 +538,7 @@ address {
 }
 
 .our-clients {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  margin: -15px;
 }
 
 .our-clients__item {
@@ -821,14 +823,6 @@ address {
 @media screen and (min-width: 1200px) {
   .portfolio-wrap {
     margin-top: 50px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
   }
 }
 

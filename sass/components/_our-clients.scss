@@ -1,12 +1,6 @@
-// .our-clients-section {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
-// }
 .our-clients {
-  display: flex;
-  flex-wrap: wrap;
+  @extend %tablet-list-wrap;
   justify-content: center;
-  margin: -15px;
 }
 .our-clients__item {
   margin: 15px;
