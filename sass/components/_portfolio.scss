@@ -8,11 +8,6 @@
   }
 }
 .portfolio {
-  // flex-wrap: wrap;
-  // display: flex;
-  // margin-top: -30px;
-  // margin-left: -30px;
-
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -20,11 +15,8 @@
   }
 }
 .portfolio__item {
-  // margin-top: 30px;
-  // margin-left: 30px;
-  // flex-basis: calc((100% - 90px) / 3);
-  // background-color: $descript-title-color;
-
+  display: flex;
+  flex-direction: column;
   &:hover {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
@@ -48,6 +40,7 @@
 .portfolio__text-content {
   border: 1px solid #eeeeee;
   padding: 20px 24px 20px 24px;
+  flex-grow: 1;
 }
 .portfolio__img-wrap {
   position: relative;

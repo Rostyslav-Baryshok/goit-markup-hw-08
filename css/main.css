@@ -83,8 +83,7 @@ address {
 }
 
 .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
 }
 
 @media screen and (min-width: 1200px) {
@@ -815,6 +814,11 @@ address {
   }
 }
 
+.portfolio__item {
+  display: flex;
+  flex-direction: column;
+}
+
 .portfolio__item:hover {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -845,6 +849,7 @@ address {
 .portfolio__text-content {
   border: 1px solid #eeeeee;
   padding: 20px 24px 20px 24px;
+  flex-grow: 1;
 }
 
 .portfolio__img-wrap {
