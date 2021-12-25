@@ -1,16 +1,21 @@
-.contact {
-  display: none;
+.contacts-wrap {
+  margin-left: auto;
 
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.contacts {
   @media screen and (min-width: 768px) {
     display: flex;
-    margin-left: auto;
     flex-direction: column;
   }
   @media screen and (min-width: 1200px) {
     flex-direction: row;
   }
 }
-.contact__item {
+.contacts__item {
   &:not(:last-child) {
     @media screen and (max-width: 1199px) {
       margin-bottom: 10px;
@@ -22,7 +27,7 @@
     }
   }
 }
-.contact__link {
+.contacts__link {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -40,7 +45,7 @@
     font-size: 14px;
   }
 }
-.contact__icon {
+.contacts__icon {
   margin-right: 10px;
   fill: currentColor;
 }

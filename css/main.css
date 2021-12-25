@@ -115,7 +115,7 @@ address {
   background-color: #ffffff;
   width: 100vw;
   height: 100vh;
-  padding: 48px 0 48px 40px;
+  padding: 48px 40px;
   z-index: 9;
   transform: translateX(100%);
   transition: transform 300ms ease-in-out;
@@ -265,6 +265,12 @@ address {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 767px) {
+  .navigation {
+    display: none;
+  }
+}
+
 .navigation__menu {
   display: none;
   align-items: center;
@@ -281,11 +287,18 @@ address {
 }
 
 .navigation__link {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation__link {
+    padding: 32px 0;
+  }
 }
 
 .navigation__link.current {
@@ -295,7 +308,7 @@ address {
 .navigation__link.current::after {
   content: "";
   position: absolute;
-  bottom: -34px;
+  bottom: -1px;
   left: 0;
   width: 100%;
   height: 4px;
@@ -307,37 +320,42 @@ address {
   color: #2196f3;
 }
 
-.contact {
-  display: none;
+.contacts-wrap {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts-wrap {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
-  .contact {
+  .contacts {
     display: flex;
-    margin-left: auto;
     flex-direction: column;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .contact {
+  .contacts {
     flex-direction: row;
   }
 }
 
 @media screen and (max-width: 1199px) {
-  .contact__item:not(:last-child) {
+  .contacts__item:not(:last-child) {
     margin-bottom: 10px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .contact__item:not(:last-child) {
+  .contacts__item:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-.contact__link {
+.contacts__link {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -347,18 +365,18 @@ address {
   color: #757575;
 }
 
-.contact__link:hover, .contact__link:focus {
+.contacts__link:hover, .contacts__link:focus {
   color: #2196f3;
 }
 
 @media screen and (min-width: 1200px) {
-  .contact__link {
+  .contacts__link {
     margin-bottom: 0;
     font-size: 14px;
   }
 }
 
-.contact__icon {
+.contacts__icon {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -416,23 +434,19 @@ address {
 }
 
 .header {
-  padding-top: 16px;
-  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .header {
-    padding-top: 21px;
-    padding-bottom: 21px;
+    padding: 16px 0;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
-  }
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -751,7 +765,6 @@ address {
 }
 
 .menu-button {
-  display: inline-flex;
   margin: 0;
   padding: 0;
   border: none;
@@ -1163,6 +1176,12 @@ address {
   background-image: url(../images/icon-check-br.svg);
   border-radius: 2px;
   transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 339px) {
+  .checkbox-fild__icon {
+    margin-right: 16px;
+  }
 }
 
 .checkbox-fild__input:checked + .checkbox-fild__icon {

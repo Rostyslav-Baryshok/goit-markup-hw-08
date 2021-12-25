@@ -33,6 +33,10 @@
   border-radius: 2px;
   transition: background-image 250ms $timing-function,
     background-color 250ms $timing-function;
+
+  @media screen and (max-width: 339px) {
+    margin-right: 16px;
+  }
 }
 .checkbox-fild__input:checked + .checkbox-fild__icon {
   background-size: contain;
