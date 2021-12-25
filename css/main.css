@@ -14,7 +14,7 @@
   align-items: center;
 }
 
-.our-clients, .portfolio {
+.our-clients, .doing {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
@@ -363,6 +363,7 @@ address {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #757575;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts__link:hover, .contacts__link:focus {
@@ -609,16 +610,9 @@ address {
   }
 }
 
-.doing {
-  display: flex;
-  margin-top: -30px;
-  margin-left: -30px;
-}
-
 .doing__item {
-  flex-basis: calc((100% - 90px) / 3);
-  margin-top: 30px;
-  margin-left: 30px;
+  flex-basis: calc((100% - 3 * 30px) / 3);
+  margin: 15px;
 }
 
 .doing__thumb {
@@ -810,17 +804,7 @@ address {
 }
 
 .filters__item {
-  margin: 8px;
-}
-
-.filters__item:not(:last-child) {
-  margin-right: 0;
-}
-
-@media screen and (min-width: 768px) {
-  .filters__item {
-    margin: 0 8px;
-  }
+  margin: 8px 0 8px 8px;
 }
 
 .portfolio-wrap {
@@ -835,6 +819,20 @@ address {
 
 @media screen and (min-width: 1200px) {
   .portfolio-wrap {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
     margin-top: 50px;
   }
 }
@@ -1001,14 +999,15 @@ address {
   }
 }
 
-.footer__form {
-  margin-top: 60px;
+@media screen and (max-width: 1199px) {
+  .footer__form {
+    margin-top: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .footer__form {
     margin-left: auto;
-    margin-top: 0;
   }
 }
 

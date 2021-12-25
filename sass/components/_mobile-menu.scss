@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #ffffff;
+  background-color: $descript-title-color;
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
@@ -29,7 +29,7 @@
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: $secondary-text-color;
 
   &:hover,
   &:focus {
@@ -64,7 +64,7 @@
   font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: $main-text-color;
 }
 
 .mobile-menu__contacts-link--decore {

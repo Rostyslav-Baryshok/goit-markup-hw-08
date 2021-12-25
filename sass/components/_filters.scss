@@ -10,11 +10,5 @@
   }
 }
 .filters__item {
-  margin: 8px;
-  &:not(:last-child) {
-    margin-right: 0;
-  }
-  @media screen and (min-width: 768px) {
-    margin: 0 8px;
-  }
+  margin: 8px 0 8px 8px;
 }

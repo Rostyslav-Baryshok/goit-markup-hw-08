@@ -35,6 +35,7 @@
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: $main-text-color;
+  transition: color 250ms $timing-function;
 
   &:hover,
   &:focus {
