@@ -1,0 +1,28 @@
+.social-text-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-text-links__item {
+  margin-bottom: 10px;
+  &:not(:last-child) {
+    display: flex;
+    margin-right: 10px;
+    &::after {
+      content: "";
+      height: 100%;
+      width: 1px;
+      display: block;
+      margin-left: 10px;
+      background-color: rgba(33, 33, 33, 0.2);
+    }
+  }
+}
+
+.social-text-links__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+}
