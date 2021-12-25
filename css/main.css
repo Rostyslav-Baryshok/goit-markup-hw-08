@@ -316,6 +316,12 @@ address {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .contacts {
+    margin-bottom: 64px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .contacts {
     display: flex;
@@ -329,7 +335,13 @@ address {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts__item:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -356,11 +368,31 @@ address {
   color: #2196f3;
 }
 
+@media screen and (max-width: 767px) {
+  .contacts__link {
+    font-size: 24px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .contacts__link {
     margin-bottom: 0;
     font-size: 14px;
   }
+}
+
+.contacts__link--size {
+  font-size: 34px;
+}
+
+@media screen and (max-width: 376px) {
+  .contacts__link--size {
+    font-size: 27px;
+  }
+}
+
+.contacts__link--color {
+  color: #2196f3;
 }
 
 .contacts__icon {
