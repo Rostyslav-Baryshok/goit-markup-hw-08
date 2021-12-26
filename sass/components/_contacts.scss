@@ -41,7 +41,7 @@
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  color: $main-text-color;
+  color: $primary-shade-color;
   transition: color 250ms $timing-function;
 
   &:hover,
@@ -56,14 +56,14 @@
     font-size: 14px;
   }
 }
-.contacts__link--size {
+.contacts__link--big-size {
   font-size: 34px;
 
   @media screen and (max-width: 376px) {
     font-size: 27px;
   }
 }
-.contacts__link--color {
+.contacts__link--accent-color {
   color: $accent-color;
 }
 

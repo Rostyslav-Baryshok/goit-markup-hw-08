@@ -1,5 +1,5 @@
 .our-team-section {
-  background: $our-tea-background;
+  background: $secondary-shade-color;
 }
 .our-team {
   @media screen and (min-width: 768px) {
@@ -28,11 +28,11 @@
 .our-team__content {
   padding-top: 30px;
   padding-bottom: 24px;
-  background-color: $descript-title-color;
+  background-color: $secondary-color;
   border-radius: 0px 0px 4px 4px;
 }
 .our-team__name {
-  color: $secondary-text-color;
+  color: $primary-color;
   text-align: center;
   margin-bottom: 10px;
   font-weight: 500;
@@ -40,7 +40,7 @@
   font-size: 16px;
 }
 .our-team__profession {
-  @include text(400, $main-text-color);
+  @include text(400, $primary-shade-color);
   font-size: 16px;
   line-height: 1.18;
   text-align: center;

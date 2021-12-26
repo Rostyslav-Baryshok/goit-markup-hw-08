@@ -148,10 +148,6 @@ address {
   flex-wrap: wrap;
 }
 
-.social-text-links__item {
-  margin-bottom: 10px;
-}
-
 .social-text-links__item:not(:last-child) {
   display: flex;
   margin-right: 10px;
@@ -381,17 +377,17 @@ address {
   }
 }
 
-.contacts__link--size {
+.contacts__link--big-size {
   font-size: 34px;
 }
 
 @media screen and (max-width: 376px) {
-  .contacts__link--size {
+  .contacts__link--big-size {
     font-size: 27px;
   }
 }
 
-.contacts__link--color {
+.contacts__link--accent-color {
   color: #2196f3;
 }
 
@@ -559,7 +555,7 @@ address {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #000000;
+  color: #212121;
 }
 
 .logo--secondary {
@@ -779,6 +775,8 @@ address {
 .menu-button {
   margin: 0;
   padding: 0;
+  width: 40px;
+  height: 40px;
   border: none;
   background-color: transparent;
   z-index: 10;
@@ -793,6 +791,12 @@ address {
   .menu-button {
     display: none;
   }
+}
+
+.menu-button.is-open {
+  position: fixed;
+  top: 21px;
+  right: 25px;
 }
 
 .menu-button .menu-button__icon-cross {
@@ -861,7 +865,7 @@ address {
 }
 
 .portfolio__item:hover {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 @media screen and (max-width: 767px) {

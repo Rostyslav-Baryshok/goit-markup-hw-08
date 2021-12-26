@@ -12,10 +12,10 @@
   margin-bottom: 9px;
 }
 .address__map {
-  color: $descript-title-color;
+  color: $secondary-color;
 }
 .address__link {
-  color: $address-link-footer;
+  color: rgba($secondary-color, 0.6);
   transition: color 250ms $timing-function;
 
   &:hover,

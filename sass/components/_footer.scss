@@ -1,5 +1,5 @@
 .footer {
-  background: $hero-footer-background;
+  background: $main-background-color;
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
@@ -36,7 +36,7 @@
   text-transform: uppercase;
   margin-bottom: 20px;
   margin-left: auto;
-  color: $descript-title-color;
+  color: $secondary-color;
   letter-spacing: 0.03em;
 
   @media screen and (min-width: 1200px) {

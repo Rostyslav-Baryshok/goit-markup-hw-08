@@ -4,7 +4,6 @@
 }
 
 .social-text-links__item {
-  margin-bottom: 10px;
   &:not(:last-child) {
     display: flex;
     margin-right: 10px;
@@ -14,7 +13,7 @@
       width: 1px;
       display: block;
       margin-left: 10px;
-      background-color: rgba(33, 33, 33, 0.2);
+      background-color: rgba($primary-color, 0.2);
     }
   }
 }

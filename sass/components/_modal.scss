@@ -5,7 +5,7 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms;
   padding: 40px;
-  background-color: $descript-title-color;
+  background-color: $secondary-color;
   box-shadow: 3px 0px 1px rgba(0, 0, 0, 0.12), 1px 0px 2px rgba(0, 0, 0, 0.2),
     1px 0px 1px rgba(0, 0, 0, 0.14);
   border-radius: 4px;
@@ -28,5 +28,5 @@
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
-  color: $secondary-text-color;
+  color: $primary-color;
 }

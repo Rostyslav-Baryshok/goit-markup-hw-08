@@ -22,7 +22,7 @@
   display: flex;
   flex-direction: column;
   &:hover {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
   }
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
@@ -65,7 +65,7 @@
   font-size: 18px;
   line-height: 1.55;
   padding: 63px 24px;
-  color: $descript-title-color;
+  color: $secondary-color;
 }
 .portfolio__item-title {
   font-weight: 700;
@@ -73,11 +73,11 @@
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
-  color: $secondary-text-color;
+  color: $primary-color;
 }
 
 .portfolio__item-description {
-  @include text(400, $main-text-color);
+  @include text(400, $primary-shade-color);
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
