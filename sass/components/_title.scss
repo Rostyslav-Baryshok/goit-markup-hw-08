@@ -6,7 +6,7 @@
   margin-bottom: 30px;
   color: $primary-color;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     font-size: 36px;
     line-height: 1.17;
     margin-bottom: 50px;

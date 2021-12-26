@@ -1,7 +1,7 @@
 .header {
   border-bottom: 1px solid #ececec;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $max-mobile) {
     padding: 16px 0;
   }
 }
@@ -9,16 +9,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
   }
 }
 .header__logo {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-right: 88px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-right: 93px;
   }
 }
